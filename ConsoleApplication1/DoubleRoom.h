@@ -1,0 +1,1 @@
+class DoubleRoom : public Room

@@ -1,0 +1,1 @@
+class SingleRoom: public Room
