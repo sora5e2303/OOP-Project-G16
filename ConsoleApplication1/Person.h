@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <string>
 using namespace std;
 
 class Person {
@@ -25,8 +24,7 @@ string GetE(){return m_email;};
 
 void SetFirst(string f){m_first = f;};
 void SetLast(string l){m_last = l;};
-void SetAdd(string a){}
-
-
-
+void SetAdd(string a){m_address = a;};
+void SetP(string p){m_phone = p;};
+void SetE(string e){m_email = e;};
 };
