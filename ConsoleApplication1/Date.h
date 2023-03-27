@@ -9,7 +9,7 @@ class Date {
     int year;
   
   public:
-    // Default constructor
+    
     Date() {
         day = 1;
         month = 1;
