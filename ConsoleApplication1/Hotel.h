@@ -1,15 +1,19 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
 class Hotel {
   private:
-    std::string name;
+    string name;
     int numRooms;
     int numStaffMembers;
 
   public:
     // Constructor
-    Hotel(std::string hotelName, int numRooms, int numStaffMembers) {
+    Hotel(std::string hotelName, int NumR, int NumS) {
         name = hotelName;
-        this->numRooms = numRooms;
-        this->numStaffMembers = numStaffMembers;
+        numRooms = NumR;
+        numStaffMembers = NumS;
     }
 
     // Getter methods
@@ -30,11 +34,11 @@ class Hotel {
         name = hotelName;
     }
 
-    void setNumRooms(int numRooms) {
-        this->numRooms = numRooms;
+    void setNumRooms(int NumR) {
+        numRooms = NumR;
     }
 
-    void setNumStaffMembers(int numStaffMembers) {
-        this->numStaffMembers = numStaffMembers;
+    void setNumStaffMembers(int NumR) {
+        numStaffMembers = NumS;
     }
 };

@@ -5,4 +5,8 @@ Room::Room() {
     m_price = 0;
 }
 
-Room
+Room::Room(int n, int c, int p){
+    m_roomnum = n;
+    m_roomcapacity = c;
+    m_price = p;
+}
