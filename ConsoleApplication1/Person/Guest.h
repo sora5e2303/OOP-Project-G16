@@ -10,9 +10,7 @@ public:
     Guest() : Person();
     Guest(int i, string f, string l, string a, string p, string e);
 
-    int Getid(){return g_id;};
+    int Getid(){return 100000 + (rand() % 900001);};
 
-    void Setid(){g_id = 100000 + (rand() % 900001);};
-
-
+    void Setid(){g_id = Getid();};
 }
