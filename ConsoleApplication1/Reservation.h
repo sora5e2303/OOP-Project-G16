@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class Reservation
+class Reservation{
 //Class Structure
     private:
         Guest guest;
