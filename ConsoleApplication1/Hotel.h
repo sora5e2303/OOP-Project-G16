@@ -29,40 +29,40 @@ public:
         return name;
     }
 
-    void setName(string name) {
-        this->name = name;
+    void setName(string n) {
+        name = n;
     }
 
     string getAddress() const {
         return address;
     }
 
-    void setAddress(string address) {
-        this->address = address;
+    void setAddress(string a) {
+        address = a;
     }
 
     string getCity() const {
         return city;
     }
 
-    void setCity(string city) {
-        this->city = city;
+    void setCity(string c) {
+        city = c;
     }
 
     string getState() const {
         return state;
     }
 
-    void setState(string state) {
-        this->state = state;
+    void setState(string s) {
+        state = s;
     }
 
     string getZipCode() const {
         return zipCode;
     }
 
-    void setZipCode(string zipCode) {
-        this->zipCode = zipCode;
+    void setZipCode(string z) {
+        zipCode = z;
     }
 
     // Room Management
