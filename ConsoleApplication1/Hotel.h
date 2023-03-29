@@ -4,6 +4,10 @@
 #include "Room.h"
 #include "Reservation.h"
 #include "ReservationList.h"
+#include "DoubleRoom.h"
+#include "SingleRoom.h"
+#include "Suite.h"
+#include "Date.h"
 
 using namespace std;
 
