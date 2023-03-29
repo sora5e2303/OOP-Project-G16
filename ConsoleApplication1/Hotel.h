@@ -16,12 +16,12 @@ private:
 
 public:
     // Constructor
-    Hotel(string name, string address, string city, string state, string zipCode) {
-        this->name = name;
-        this->address = address;
-        this->city = city;
-        this->state = state;
-        this->zipCode = zipCode;
+    Hotel(string n, string a, string c, string s, string z) {
+        name = n;
+        address = a;
+        city = c;
+        state = s;
+        zipCode = z;
     }
 
     // Getters and Setters
