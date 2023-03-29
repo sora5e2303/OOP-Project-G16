@@ -7,7 +7,8 @@
 
 using namespace std;
 
-class Reservation {
+class Reservation
+//Class Structure
     private:
         Guest guest;
         Room room;
@@ -17,8 +18,10 @@ class Reservation {
 
     public:
         Reservation();
+//Overloaded Constructor
         Reservation(Guest guest, Room room, Date startDate, Date endDate, int reservationID);
 
+// Getters and Setters
         Guest getGuest();
         Room getRoom();
         Date getStartDate();
