@@ -1,38 +1,23 @@
-#include <iostream>
-#include <string>
-using namespace std;
+#ifndef DATE_H
+#define DATE_H
 
 class Date {
-    
-  private:
-    int day;
-    int month;
-    int year;
-  
-  public:
-    
-    Date() {
-        day = 1;
-        month = 1;
-        year = 2000;
-    }
-    
-    // Parameterized constructor
-    Date(int d, int m, int y) {
-        day = d;
-        month = m;
-        year = y;
-    }
-    
-    // Member function to set the date
-    void setDate(int d, int m, int y) {
-        day = d;
-        month = m;
-        year = y;
-    }
-    
-    // Member function to print the date
-    void printDate() {
-        cout << day << "/" << month << "/" << year << endl;
-    }
+    private:
+        int day;
+        int month;
+        int year;
+
+    public:
+        Date();
+        Date(int day, int month, int year);
+        int getDay();
+        int getMonth();
+        int getYear();
+        void setDay(int day);
+        void setMonth(int month);
+        void setYear(int year);
+        void setDate(int day, int month, int year);
+        bool operator<(const Date& other) const;
 };
+
+#endif
