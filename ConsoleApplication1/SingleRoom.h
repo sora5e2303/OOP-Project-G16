@@ -1,3 +1,6 @@
+#include <string>
+#include <iostream>
+
 class SingleRoom: public Room;
 class SingleRoom {
     private: 
