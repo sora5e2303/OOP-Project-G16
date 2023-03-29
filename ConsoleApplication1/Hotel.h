@@ -2,6 +2,8 @@
 #include <string>
 #include <vector>
 #include "Room.h"
+#include "Reservation.h"
+#include "ReservationList.h"
 
 using namespace std;
 
