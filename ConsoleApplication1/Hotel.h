@@ -9,6 +9,7 @@
 #include "Suite.h"
 #include "Date.h"
 
+
 using namespace std;
 
 class Hotel {
