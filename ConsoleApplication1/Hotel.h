@@ -10,14 +10,14 @@ class Hotel {
 
   public:
     // Constructor
-    Hotel(std::string hotelName, int NumR, int NumS) {
+    Hotel(string hotelName, int NumR, int NumS) {
         name = hotelName;
         numRooms = NumR;
         numStaffMembers = NumS;
     }
 
     // Getter methods
-    std::string getName() const {
+    string getName() const {
         return name;
     }
 
@@ -30,7 +30,7 @@ class Hotel {
     }
 
     // Setter methods
-    void setName(std::string hotelName) {
+    void setName(string hotelName) {
         name = hotelName;
     }
 

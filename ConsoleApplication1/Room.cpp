@@ -1,12 +1,24 @@
 #include "Room.h"
-Room::Room() {
-    m_roomnum = 0;
-    m_roomcapacity = 0;
-    m_price = 0;
+
+Room::Room(int roomNumber, int floor, int capacity, bool isAvailable)
+    : roomNumber(roomNumber), floor(floor), capacity(capacity), isAvailable(isAvailable) {}
+
+int Room::getRoomNumber() {
+    return roomNumber;
 }
 
-Room::Room(int n, int c, int p){
-    m_roomnum = n;
-    m_roomcapacity = c;
-    m_price = p;
+int Room::getFloor() {
+    return floor;
+}
+
+int Room::getCapacity() {
+    return capacity;
+}
+
+bool Room::getIsAvailable() {
+    return isAvailable;
+}
+
+void Room::setIsAvailable(bool isAvailable) {
+    this->isAvailable = isAvailable;
 }

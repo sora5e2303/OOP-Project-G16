@@ -1,8 +1,12 @@
-#include SingleRoom.h
-SingleRoom::SingleRoom(){
-    m_maxcapguestone = 0;
+#include "SingleRoom.h"
+
+SingleRoom::SingleRoom(int roomNumber, int floor, int capacity, bool isAvailable, double basePrice)
+    : Room(roomNumber, floor, capacity, isAvailable), basePrice(basePrice) {}
+
+double SingleRoom::getBasePrice() {
+    return basePrice;
 }
 
-SingleRoom::SingleRoom(int o){
-    m_maxcapguestone = o;
+double SingleRoom::calculatePrice() {
+    return basePrice;
 }
