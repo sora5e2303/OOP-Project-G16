@@ -1,18 +1,21 @@
-#ifndef SINGLEROOM_H
-#define SINGLEROOM_H
-
-#include "Room.h"
-
-using namespace std;
-
-class SingleRoom : public Room {
-    private:
-        double basePrice;
+class SingleRoom: public Room;
+class SingleRoom {
+    private: 
+    int m_maxcapguestone;
 
     public:
-        SingleRoom(int roomNumber, int floor, int capacity, bool isAvailable, double basePrice);
-        double getBasePrice();
-        double calculatePrice();
-};
+SingleRoom();
+//Parameterized Constructor
+SingleRoom (int o) {
 
-#endif
+    m_maxcapguestone = o
+}
+
+//Getters and Setters
+int Getmaxcapguestone() = {return m_maxcapguestone;}; 
+void Setmaxcapguestone(int o) {o = m_maxcapguestone;}; 
+ void printmaxcapguestone() {
+    cout << "The single room capacity is one guest" << Getmaxcapguestone() << endl;
+ }
+}
+
