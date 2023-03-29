@@ -1,5 +1,5 @@
-#ifndef DOUBLEROOM_H
-#define DOUBLEROOM_H
+#include <iostream>
+#include <string>
 
 #include "Room.h"
 

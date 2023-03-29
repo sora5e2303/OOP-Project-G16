@@ -1,5 +1,5 @@
-#ifndef SUITE_H
-#define SUITE_H
+#include <iostream>
+#include <string>
 
 #include "Room.h"
 

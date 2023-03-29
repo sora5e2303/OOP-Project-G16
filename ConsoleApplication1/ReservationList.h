@@ -1,5 +1,5 @@
-#ifndef RESERVATION_LIST_H
-#define RESERVATION_LIST_H
+#include <iostream>
+#include <string>
 
 #include <vector>
 #include "Reservation.h"
