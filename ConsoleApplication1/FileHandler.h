@@ -15,4 +15,3 @@ public:
     static void writeReservationData(string fileName, vector<Reservation> reservations);
 };
 
-#endif

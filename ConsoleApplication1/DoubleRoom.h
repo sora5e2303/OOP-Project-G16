@@ -16,4 +16,3 @@ class DoubleRoom : public Room {
         double calculatePrice();
 };
 
-#endif

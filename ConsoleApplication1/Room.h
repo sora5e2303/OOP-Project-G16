@@ -22,6 +22,4 @@ class Room {
         virtual double calculatePrice() = 0;
 };
 
-#endif
-
 

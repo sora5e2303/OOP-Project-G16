@@ -20,4 +20,3 @@ class Date {
         bool operator<(const Date& other) const;
 };
 
-#endif

@@ -16,4 +16,4 @@ class Suite : public Room {
         double calculatePrice();
 };
 
-#endif
+

@@ -20,4 +20,3 @@ class ReservationList {
         int getNextReservationID();
 };
 
-#endif
