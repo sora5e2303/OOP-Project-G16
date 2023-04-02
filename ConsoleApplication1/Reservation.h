@@ -12,8 +12,8 @@ class Reservation {
     private:
         string guest;
         string room;
-        int startDate;
-        int endDate;
+        string startDate;
+        string endDate;
         int reservationID;
 
     public:
@@ -24,16 +24,16 @@ class Reservation {
 // Getters to return required values
         string getguest() {return guest;};
         string getroom(){return room;};
-        int getstartDate(){return startDate;};
-        int getendDate(){return endDate;};
+        string getstartDate(){return startDate;};
+        string getendDate(){return endDate;};
         int getreservationID(){return reservationID};
 
 //Setters to assign letters to variables
-        void setguest(string g) {g = guest;};
-        void setroom(string r){r= room;};
-        void setstartDate(int s){s= startDate;};
-        void setendDate(int e){e = endDate;};
-        void setreservationID(int i){i = reservationID};
+        void setguest(string g) {guest = g;};
+        void setroom(string r){room = r;};
+        void setstartDate(string s){startDate = s;};
+        void setendDate(string e){endDate = e;};
+        void setreservationID(int i){reservationID = i};
 
 //Virtual void to print variables when code is run
         virtual void print () {
