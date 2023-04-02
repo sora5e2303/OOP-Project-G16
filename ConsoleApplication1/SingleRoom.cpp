@@ -1,7 +1,13 @@
 #include "SingleRoom.h"
 
 SingleRoom::SingleRoom(int roomNumber, int floor, int capacity, bool isAvailable, double basePrice)
-    : Room(roomNumber, floor, capacity, isAvailable), basePrice(basePrice) {}
+{
+    int roomNumber = roomNumber;
+    int floor = floor;
+    int capacity = capacity;
+    bool isAvailable = isAvailable;
+    double basePrice = basePrice;
+}   
 
 double SingleRoom::getBasePrice() {
     return basePrice;
