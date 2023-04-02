@@ -1,45 +1,38 @@
-//Makayla
-#include <iostream>
-#include <string>
+#pragma once
 #include "Guest.h"
-#include "Room.h"
-#include "Date.h"
 
-using namespace std;
+class Reservation : public Guest{
+    //Class Structure
+private:
+    int room;
+    string startDate;
+    string endDate;
+    int reservationID;
+    string RoomType;
 
-class Reservation {
-//Class Structure
-    private:
-        string room;
-        string startDate;
-        string endDate;
-        int reservationID;
+public:
+    Reservation();
+    //Overloaded Constructor
+    Reservation( int r, string SD, string ED, int ID, string Type);
 
-    public:
-        Reservation();
-//Overloaded Constructor
-        Reservation(string guest, string room, int startDate, int endDate, int reservationID);
+    // Getters to return required values
+    int getroom() { return room; };
+    string getstartDate() { return startDate; };
+    string getendDate() { return endDate; };
+    int getreservationID() { return reservationID; };
+    string GetType() { return RoomType; };
 
-// Getters to return required values
-        string getroom(){return room;};
-        string getstartDate(){return startDate;};
-        string getendDate(){return endDate;};
-        int getreservationID(){return reservationID};
+    //Setters to assign letters to variables
+    void setroom(int r) { room = r; };
+    void setstartDate(string s) { startDate = s; };
+    void setendDate(string e) { endDate = e; };
+    void setreservationID(int i) { reservationID = i; };
+    void SetRoomType(string t) { RoomType = t; };
 
-//Setters to assign letters to variables
-        void setroom(string r){room = r;};
-        void setstartDate(string s){startDate = s;};
-        void setendDate(string e){endDate = e;};
-        void setreservationID(int i){reservationID = i};
+    //void to print variables when code is run
+    void printRes(int id);
 
-//Virtual void to print variables when code is run
-        virtual void print () {
-                cout << "Guest Name: " << GetF() << GetL() << endl;
-                cout << "Room Number: " << getroom() << endl;
-                cout << "Start Date: " << getstartDate() << endl;
-                cout << "End Date: " << getendDate() << endl;
-                cout << "Reservation ID: " << getreservationID() << endl;
-        }
+    void CreateRes();
+    string FindRes(const string& Res, int id);
 };
-
 
