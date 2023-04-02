@@ -1,19 +1,24 @@
 #include "Suite.h"
 
-const double Suite::BASE_PRICE = 200.0;
-const double Suite::EXTRA_BED_PRICE = 50.0;
+const double Suite::BasePrice = 200.0;
+const double Suite::ExtraBedPrice = 50.0;
 
-Suite::Suite(int roomNumber, int floor, int capacity, bool isAvailable, bool hasExtraBed)
-    : Room(roomNumber, floor, capacity, isAvailable), hasExtraBed(hasExtraBed) {}
+Suite::Suite(int Rnum, int f, int cap, bool Ava, bool Xbed){
+    roomNumber = Rnum;
+    floor = f;
+    capacity = cap;
+    isAvailable = Ava;
+    hasExtraBed = Xbed;
+}
 
 bool Suite::getHasExtraBed() {
     return hasExtraBed;
 }
 
 double Suite::calculatePrice() {
-    double price = BASE_PRICE;
+    double price = BasePrice;
     if (hasExtraBed) {
-        price += EXTRA_BED_PRICE;
+        price += ExtraBedPrice;
     }
     return price;
 }

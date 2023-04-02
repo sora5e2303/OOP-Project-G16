@@ -4,9 +4,10 @@
 #include "Room.h"
 
 class Suite : public Room {
+
     private:
-        const static double BASE_PRICE;
-        const static double EXTRA_BED_PRICE;
+        const static double BasePrice;
+        const static double ExtraBedPrice;
 
         bool hasExtraBed;
 
