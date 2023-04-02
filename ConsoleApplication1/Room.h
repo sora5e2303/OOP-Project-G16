@@ -6,7 +6,7 @@
 using namespace std;
 
 class Room {
-    private:
+    protected:
         int roomNumber;
         int floor;
         int capacity;

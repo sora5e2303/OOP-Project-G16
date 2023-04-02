@@ -1,8 +1,9 @@
 #include <string>
 #include <iostream>
+#include "Room.h"
 using namespace std;
 
-class SingleRoom {
+class SingleRoom : public Room{
     private: 
         int m_maxcapguestone;
 
