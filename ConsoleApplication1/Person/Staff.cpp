@@ -25,15 +25,14 @@ bool Staff::InFile(const string& SD) {
     return false;
 }
 
-void Staff::Print() {
+void Staff::login() {
     
     while (!InFile("Staffdata.txt")) {
         cout << "Please enter a valid ID: ";
         cin >> s_id;
     }
-    
     if (InFile("Staffdata.txt")) {
-        cout << "Welcome back!\n";
+        cout << "Welcome back!\n\n";
     }
     
 }

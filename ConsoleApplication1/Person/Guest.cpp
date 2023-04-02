@@ -38,7 +38,7 @@ bool Guest::InFile(const string& GD) {
     return false;
 }
 
-void Guest::Print() {
+void Guest::login() {
 
     while (!InFile("GuestData.txt")) {
         cin.ignore();

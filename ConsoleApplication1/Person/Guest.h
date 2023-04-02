@@ -35,5 +35,5 @@ public:
 
     void WriteToFile();
     bool InFile(const string& GD);
-    void Print();
+    void login();
 };

@@ -21,5 +21,7 @@ public:
     void SetTitle(string t) { s_jobT = t; }
 
     bool InFile(const string& SD);
-    void Print();
+    void login();
 };
+
+
