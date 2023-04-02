@@ -1,3 +1,4 @@
+//DoubleRoom.cpp
 #include "DoubleRoom.h"
 
 const double DoubleRoom::BASE_PRICE = 100.0;

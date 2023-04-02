@@ -1,3 +1,4 @@
+//SingleRoom.cpp
 #include "SingleRoom.h"
 
 SingleRoom::SingleRoom(int roomNumber, int floor, int capacity, bool isAvailable, double basePrice)
