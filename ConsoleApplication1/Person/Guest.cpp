@@ -2,6 +2,11 @@
 
 Guest::Guest() : Person(){
     g_id = 0;
+    m_first = " ";
+    m_last = " ";
+    m_address = " ";
+    m_phone = " ";
+    m_email = " "; 
 }
 
 Guest::Guest(int i, string f, string l, string a, string p, string e){

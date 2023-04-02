@@ -1,6 +1,8 @@
-#include "Person.h"
+#include <iostream>
+#include <string>
+#include <fstream>
 
-class Staff : public Person{
+class Staff{
 
 private:
     int s_id;
@@ -15,4 +17,6 @@ public:
 
     void SetID(int s){s_id = s;};
     void SetTitle(string t){s_jobT = t;}
+
+    bool InFile(const string& SD,const string& ID);
 }
