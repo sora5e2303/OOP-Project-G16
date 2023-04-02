@@ -1,7 +1,11 @@
 #include "Room.h"
 
-Room::Room(int roomNumber, int floor, int capacity, bool isAvailable)
-    : roomNumber(roomNumber), floor(floor), capacity(capacity), isAvailable(isAvailable) {}
+Room::Room(int roomNumber, int floor, int capacity, bool isAvailable) {
+    int roomNumber = roomNumber;
+    int floor = floor;
+    int capacity = capacity;
+    bool isAvailable = isAvailable;
+}
 
 int Room::getRoomNumber() {
     return roomNumber;
@@ -20,5 +24,6 @@ bool Room::getIsAvailable() {
 }
 
 void Room::setIsAvailable(bool isAvailable) {
-    this->isAvailable = isAvailable;
+    isAvailable = isAvailable;
 }
+
