@@ -34,11 +34,11 @@ class Reservation {
 
 //Virtual void to print variables when code is run
         virtual void print () {
-            cout << "Guest Name: " << GetF() << GetL() << endl;
-            cout << "Room Number: " << getroom()<< endl;
-            cout << "Start Date: " << getstartDate()<<endl;
-            cout << "End Date: " << getendDate() << endl;
-            cout << "Reservation ID: " << getreservationID() << endl;
+                cout << "Guest Name: " << GetF() << GetL() << endl;
+                cout << "Room Number: " << getroom() << endl;
+                cout << "Start Date: " << getstartDate() << endl;
+                cout << "End Date: " << getendDate() << endl;
+                cout << "Reservation ID: " << getreservationID() << endl;
         }
 };
 
