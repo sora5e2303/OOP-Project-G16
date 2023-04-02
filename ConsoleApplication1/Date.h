@@ -1,22 +1,15 @@
-#include <iostream>
-#include <string>
-
 class Date {
-    private:
-        int day;
-        int month;
-        int year;
+private:
+    int month, day, year;
 
-    public:
-        Date();
-        Date(int day, int month, int year);
-        int getDay();
-        int getMonth();
-        int getYear();
-        void setDay(int day);
-        void setMonth(int month);
-        void setYear(int year);
-        void setDate(int day, int month, int year);
-        bool operator<(const Date& other) const;
+public:
+    Date(int m, int d, int y) {}
+
+    int getMonth() const { return month; }
+    int getDay() const { return day; }
+    int getYear() const { return year; }
+
+    void setMonth(int m) { month = m; }
+    void setDay(int d) { day = d; }
+    void setYear(int y) { year = y; }
 };
-
