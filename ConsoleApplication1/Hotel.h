@@ -13,6 +13,7 @@
 using namespace std;
 
 class Hotel {
+    
 private:
     string name;
     string address;
