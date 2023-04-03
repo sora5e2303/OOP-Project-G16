@@ -14,7 +14,6 @@ class Room {
     public:
         Room(int roomNumber, int floor, int capacity, bool isAvailable);
         int getRoomNumber();
-        int getFloor();
         int getCapacity();
         bool getIsAvailable();
         void setIsAvailable(bool isAvailable);

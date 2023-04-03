@@ -12,15 +12,12 @@ int Room::getRoomNumber() {
     return roomNumber;
 }
 
-int Room::getFloor() {
-    return floor;
-}
-
 int Room::getCapacity() {
     return capacity;
 }
 
 bool Room::getIsAvailable() {
+
     return isAvailable;
 }
 
